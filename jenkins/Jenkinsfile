@@ -1,7 +1,7 @@
 pipeline {
     agent any
         tools {
-            image 'maven:3.9.0'
+            image 'mvn cln install'
             args '-v /root/.m2:/root/.m2'
         }
     stages {
